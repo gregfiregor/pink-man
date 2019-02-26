@@ -143,7 +143,7 @@ $(window).on('load', function () {
     phoneInput.MyValidation = new MyValidation();
     phoneInput.MyValidation.validiryChecks = phoneValidity;
 
-    phoneInput.addEventListener('change', function () {
+    phoneInput.addEventListener('change', function (e) {
 
         e.target.MyValidation.checkValidity(this);
         checkSubmitToDisable();
